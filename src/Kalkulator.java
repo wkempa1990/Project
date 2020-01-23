@@ -4,9 +4,9 @@ public class Kalkulator {
     public static void main(String[] args) {
         Scanner liczba = new Scanner(System.in);
         System.out.println("Podaj pierwsza liczbe :");
-        int x = liczba.nextInt();
+        double x = liczba.nextDouble();
         System.out.println("Podaj druga liczbe:");
-        int y = liczba.nextInt();
+        double y = liczba.nextDouble();
         System.out.println("Jakie dzialanie wykonac?\n" +
                 "+ (Dodawanie)\n" +
                 "- (Odejmowanie)\n" +
