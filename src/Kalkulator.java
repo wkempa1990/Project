@@ -25,8 +25,11 @@ public class Kalkulator {
                 System.out.println("wynik :" + " " + (x * y));
                 break;
             case "/":
+                if(x==0 || y==0){
+                    System.out.println("Nie dziel przez zero ...");
+                }else{
                 System.out.println("wynik :" + " " + (x / y));
-                break;
+                }break;
             default:
                 System.out.println("Niepoprawny znak");
         }
