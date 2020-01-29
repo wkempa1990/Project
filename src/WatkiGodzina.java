@@ -4,7 +4,7 @@ public class WatkiGodzina {
     public static void main(String[] args) throws InterruptedException {
         Runnable czasomierze = () -> {
             try {
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < 5; i++) {
                     Thread.sleep(5000);
                     System.out.println(LocalTime.now());
                 }
