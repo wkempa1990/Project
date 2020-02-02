@@ -14,10 +14,12 @@ public class ObliczIleZostaloDniDoTwoichUrodzin {
                 int miesiac = new Scanner(System.in).nextInt();
                 System.out.println("Podaj dzien urodzin: ");
                 int dzien = new Scanner(System.in).nextInt();
-                LocalDate dataurodzenia = LocalDate.of(rok, miesiac, dzien);
-                long days = LocalDate.now().until(dataurodzenia, ChronoUnit.DAYS);
-                System.out.print("Pozostalo " + days + " dni do twoich urodzin");
-                break;
+                if(rok>0&&miesiac>0&&dzien>0){
+                    LocalDate dataurodzenia = LocalDate.of(rok, miesiac, dzien);
+                    long days = LocalDate.now().until(dataurodzenia, ChronoUnit.DAYS);
+                    System.out.print("Pozostalo " + days + " dni do twoich urodzin");
+                    break;
+                }
             } catch (InputMismatchException ex1) {
                 System.out.println("Podana wartość nie jest liczbą");
             }
