@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class MiedzyCyframi {
     public static void main(String[] args) {
         System.out.println("Podaj cyfre od 1 do 9  : ");
@@ -7,7 +8,7 @@ public class MiedzyCyframi {
         int liczba = new Scanner(System.in).nextInt();
         if (cyfra < 10 && cyfra > 0) {
             if (liczba == 0) {
-                System.out.println(50);
+                System.out.println(cyfra + "" + 0);
             } else if (liczba <= 9 && liczba >= 1) {
                 System.out.println(cyfra + "" + liczba);
                 System.out.println(liczba + "" + cyfra);
